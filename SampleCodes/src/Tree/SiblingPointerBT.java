@@ -1,6 +1,6 @@
 /*Write a function to connect all the adjacent nodes at the same level in a binary tree. Structure of the given Binary Tree node is like following.*/
 
-package sampleCodes;
+package Tree;
 
 import java.util.LinkedList;
 import java.util.Queue;

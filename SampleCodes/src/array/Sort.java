@@ -1,4 +1,4 @@
-package sampleCodes;
+package array;
 
 class MergeSort extends Sort{
 	

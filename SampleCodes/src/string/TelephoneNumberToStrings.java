@@ -1,4 +1,4 @@
-package sampleCodes;
+package string;
 
 public class TelephoneNumberToStrings {
 	

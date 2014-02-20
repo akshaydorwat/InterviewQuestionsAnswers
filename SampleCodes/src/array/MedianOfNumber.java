@@ -1,4 +1,4 @@
-package sampleCodes;
+package array;
 
 public class MedianOfNumber {
 	int arr1[];

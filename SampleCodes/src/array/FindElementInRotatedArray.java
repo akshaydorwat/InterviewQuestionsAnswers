@@ -1,4 +1,4 @@
-package sampleCodes;
+package array;
 /**
  * Given a sorted array of n integers that has been rotated an unknown number of
 times, give an O(log n) algorithm that finds an element in the array. You may assume

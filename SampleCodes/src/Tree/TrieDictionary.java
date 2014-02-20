@@ -1,4 +1,4 @@
-package sampleCodes;
+package Tree;
 
 import java.util.ArrayList;
 import java.util.List;

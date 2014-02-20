@@ -1,4 +1,4 @@
-package sampleCodes;
+package array;
 
 public class DivideWithOutDivisorOperator {
 	private static int binaryDivide(int dividend, int divisor) {

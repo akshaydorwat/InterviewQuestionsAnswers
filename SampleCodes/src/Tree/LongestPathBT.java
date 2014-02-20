@@ -1,4 +1,4 @@
-package sampleCodes;
+package Tree;
 
 import basicDataStructure.BTnode;
 

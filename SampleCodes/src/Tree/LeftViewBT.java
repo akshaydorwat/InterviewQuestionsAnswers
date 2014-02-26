@@ -33,6 +33,7 @@ public class LeftViewBT {
 		bt.root.left = new BTnode(2);
 		bt.root.left.left = new BTnode(1);
 		bt.root.left.right = new BTnode(3);
+
 		bt.root.right = new BTnode(6);
 		bt.root.right.left = new BTnode(5);
 		bt.root.right.right = new BTnode(7);

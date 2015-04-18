@@ -60,7 +60,7 @@ void rotate_array(int *array, int size, int rotate_count){
         break;
       }
       else
-	  {
+      {
         array[j] = array[k];
         j=k;
       }

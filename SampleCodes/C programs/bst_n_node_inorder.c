@@ -7,6 +7,7 @@ struct tree{
 	int data;
 };
 
+int num_node;
 
 struct tree * newNode(int val){
 	struct tree *temp;
@@ -16,27 +17,24 @@ struct tree * newNode(int val){
 	temp->right = NULL;
 }
 
-struct tree * _mirror(struct tree *root){
+struct tree * nth_inorder(struct tree *root, int n){
 	
 	struct tree *temp;
-
 	if(root == NULL){
 		return NULL;
 	}
 	
-	temp = newNode(root->data);
-	temp->left = _mirror(root->right);
-	temp->right = _mirror(root->left);
+	temp = nth_inorder(root->left, n);
+	if(temp != NULL) return temp;
+	temp = nth_inorder(root->right, n);
+	if(temp != NULL) return temp;
 	
-	return temp;
-}
-
-struct tree * mirror(struct tree *root){
+	num_node++;
 	
-	if(root == NULL){
-		return NULL;
+	if(num_node == n){
+		return root;
 	}else{
-		return _mirror(root);
+		return NULL;
 	}
 }
 
@@ -50,7 +48,7 @@ void inorder(struct tree *root){
 
 int main(int argc, char **argv){
 	struct tree *root;
-	struct tree *mirror_root;
+	struct tree *nth_node;
 
 	root = newNode(4);
 	root->left = newNode(2);
@@ -64,11 +62,12 @@ int main(int argc, char **argv){
 	inorder(root);
 	printf("\n\n");
 
-	mirror_root = mirror(root);
-
-	printf("mirror : ");
-	inorder(mirror_root);
-	printf("\n\n");
+	nth_node = nth_inorder(root, 100);
+	
+	if(nth_node != NULL)
+		printf("Nth node data : %d \n", nth_node->data);
+	else
+		printf("Out of range \n");
 	
 
 	return 0;

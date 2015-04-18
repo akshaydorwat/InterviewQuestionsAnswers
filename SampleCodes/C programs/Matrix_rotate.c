@@ -26,7 +26,7 @@ int rotate_matrix(int matrix[4][4], int n){
       }  
   }
   
-  display_matrix(matrix, 4);
+
 }
 
 int display_matrix(int matrix[4][4], int n){
@@ -50,5 +50,6 @@ int main(){
    
    display_matrix(mat, 4);
    rotate_matrix(mat, 4);
-   
+   printf("\nRotated array : \n");
+   display_matrix(mat, 4);
 }
